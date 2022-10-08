@@ -30,6 +30,21 @@ FROM
     group by aluno
     order by media desc limit 10;
     
+    /*QUAIS OS 5 FACILITADORES MELHOR AVALIADOS?*/
+    select funcionario, avg(avaliacao) as avaliacao
+    from funcionario 
+    inner join 
+    avaliacaofacilitador on funcionario.idFuncionario = avaliacaofacilitador.idFuncionario
+    group by funcionario
+    order by avaliacao desc
+    limit 5;
+    
+    /*QUAIS OS ALUNOS ESTÃO COM OS PAGAMENTOS EM ATRASO?*/
+    select aluno, Data_Venc,statusPgto from pagamentos
+    inner join 
+    alunos on alunos.matricula = pagamentos.matricula
+    where 
+    pagamentos.statusPgto="pendente" and Data_Venc<current_date();
 
     
     

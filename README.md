@@ -1,6 +1,6 @@
 **BEM VINDO À FAME TECH - SOLUÇÕES EM BANCO DE DADOS**
 
-Primeiramente parabéns por ter adiquirdo nossos serviços. 
+Primeiramente parabéns por ter adquirdo nossos serviços. 
 
 Construímos uma solução para a Resília organizar seus dados e conseguir rapidamente responder às suas perguntas de negócio, tomar decisões estratégicas baseadas em dados e gerar novos insights.
 
